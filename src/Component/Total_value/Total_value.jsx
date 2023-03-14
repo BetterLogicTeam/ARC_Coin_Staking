@@ -65,8 +65,10 @@ function Total_value({setShoww}) {
           <dd class="chakra-stat__number css-1snxiwx">
             <p class="chakra-text css-0 text-white">{totalUserAmount} ARC</p>
           </dd>
-          <div class="css-je7iwd  text-white" style={{marginTop:"-1rem"}}>
-            <p class="chakra-text css-1veligu">{WithdrawReward} ARC WithdrawReward</p>
+          
+          <div class="chakra-stat__label css-1mqe0od " style={{marginTop:"-1rem"}}>
+            <p class="chakra-stat__label css-1mqe0od"> ARC Withdraw Able Reward <br/>
+             {WithdrawReward} ARC</p>
           </div>
         </dl>
       </div>

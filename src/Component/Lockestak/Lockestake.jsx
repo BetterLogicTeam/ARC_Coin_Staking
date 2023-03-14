@@ -46,15 +46,15 @@ function Lockestake({ setShoww, check }) {
           toast.error("Please Enter Amount First!");
           setspinner(false);
         } else {
-          if (getValue < 100) {
-            toast.error("Minimum Staking Amount 100!");
+          if (getValue < 100000) {
+            toast.error("Minimum Staking Amount 100000!");
             setspinner(false);
           } else {
             if (selectDays == 0) {
               toast.error("Please Select Days");
               setspinner(false);
             } else {
-              if(balance>=getValue){
+              if(Number(balance)>=Number(getValue)){
 
               
               setspinner(true);
@@ -68,6 +68,7 @@ function Lockestake({ setShoww, check }) {
               tokenContractOf = new web3.eth.Contract(Token_Abi, TokenAddress);
 
               let stakingValue = web3.utils.toWei(getValue);
+              console.log(selectDays,"selectDays");
 
               // console.log("stakingValue", stakingValue);
 
@@ -176,7 +177,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(30), setActive(1))}
                     >
                       <button className="btn btn-md dates">30 Days</button>
-                      <div className="arp border-top">14% ARP</div>
+                      <div className="arp border-top">18% ARP</div>
                     </div>
                     <div
                       className=" border des_tw p-0"
@@ -186,7 +187,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(90), setActive(2))}
                     >
                       <button className="btn btn-md dates">90 Days</button>
-                      <div className="arp border-top">17% ARP</div>
+                      <div className="arp border-top">24% ARP</div>
                     </div>
                     <div
                       className=" border des_tw p-0"
@@ -196,7 +197,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(180), setActive(3))}
                     >
                       <button className="btn btn-md dates">180 Days</button>
-                      <div className="arp border-top">20% ARP</div>
+                      <div className="arp border-top">30% ARP</div>
                     </div>
                     <div
                       className=" border des_tw p-0"
@@ -206,7 +207,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(360), setActive(4))}
                     >
                       <button className="btn btn-md dates">360 Days</button>
-                      <div className="arp border-top">25% ARP</div>
+                      <div className="arp border-top">36% ARP</div>
                     </div>
                   </div>
                 </div>

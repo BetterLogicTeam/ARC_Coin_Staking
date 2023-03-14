@@ -38,16 +38,16 @@ export default function Mylock({ setShoww, check }) {
             let array3 = UserInformation[2];
             let myArray = [];
             let currentTime = Math.floor(new Date().getTime() / 1000.0);
-            // console.log("Data", new Date(1673520674));
             for (let i = 0; i < array1.length; i++) {
                 // let date =new Date(Number(array3[i])*1000).toUTCString();
                 let currentTimestamp = array3[i];
+                console.log("Data", currentTimestamp);
                 // console.log("Type", Number(currentTimestamp) + Number(60) * array2[i]);
-                let date = moment(Number(array3[i]) * 1000).format("DD-MM-YYYY");
+                let date = moment(new Date(array3[i]*1000)).format("DD-MM-YYYY");
                 let obj = {
                     address: acc,
                     amount: web3.utils.fromWei(array1[i]),
-                    unLoackTime: Number(currentTimestamp) + Number(1) * array2[i],
+                    unLoackTime: Number(currentTimestamp) + Number(60) * array2[i],
                     LockTime: date,
                 };
                 myArray = [...myArray, obj];
@@ -92,7 +92,7 @@ export default function Mylock({ setShoww, check }) {
             return (
                 <div className="text_days fs-5 ">
                     {/* {days} D {hours} H {minutes} M {seconds} S */}
-                    {days} : {hours} : {minutes} : {seconds}
+                    {days}d : {hours}h : {minutes}m : {seconds}s
 
 
                 </div>
@@ -107,7 +107,7 @@ export default function Mylock({ setShoww, check }) {
             title: "Confirm",
             icon: <ExclamationCircleOutlined />,
             content:
-                "Before unstake time 10% will be deducted your amount and reward",
+                "Before unstake time 20% will be deducted your amount and reward",
             okText: "Continue",
             cancelText: "Cancel",
             onOk: () => unstake(index),
@@ -139,7 +139,7 @@ export default function Mylock({ setShoww, check }) {
     return (
         <div>
 
-            <div className="container-fluid p-0" >
+            <div className="container-fluid p-0 " >
 
                 <>
                     <div className=''>
