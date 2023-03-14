@@ -177,7 +177,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(30), setActive(1))}
                     >
                       <button className="btn btn-md dates">30 Days</button>
-                      <div className="arp border-top">18% ARP</div>
+                      <div className="arp border-top">18% APY</div>
                     </div>
                     <div
                       className=" border des_tw p-0"
@@ -187,7 +187,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(90), setActive(2))}
                     >
                       <button className="btn btn-md dates">90 Days</button>
-                      <div className="arp border-top">24% ARP</div>
+                      <div className="arp border-top">24% APY</div>
                     </div>
                     <div
                       className=" border des_tw p-0"
@@ -197,7 +197,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(180), setActive(3))}
                     >
                       <button className="btn btn-md dates">180 Days</button>
-                      <div className="arp border-top">30% ARP</div>
+                      <div className="arp border-top">30% APY</div>
                     </div>
                     <div
                       className=" border des_tw p-0"
@@ -207,7 +207,7 @@ function Lockestake({ setShoww, check }) {
                       onClick={() => (setselectDays(360), setActive(4))}
                     >
                       <button className="btn btn-md dates">360 Days</button>
-                      <div className="arp border-top">36% ARP</div>
+                      <div className="arp border-top">36% APY</div>
                     </div>
                   </div>
                 </div>
