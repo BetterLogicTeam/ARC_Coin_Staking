@@ -107,7 +107,7 @@ export default function Mylock({ setShoww, check }) {
             title: "Confirm",
             icon: <ExclamationCircleOutlined />,
             content:
-                "Before unstake time 20% will be deducted your amount and reward",
+                "Before unstake time 10% will be deducted from your staked amount",
             okText: "Continue",
             cancelText: "Cancel",
             onOk: () => unstake(index),

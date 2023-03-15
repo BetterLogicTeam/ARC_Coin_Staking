@@ -1,308 +1,411 @@
 // export const tokenStaking = "0x256E1a54e32177Fe026e2e83Ef84E4f9F181269d"; verified on archie chain old one
 
-export const tokenStaking = "0x256E1a54e32177Fe026e2e83Ef84E4f9F181269d";
-export const tokenStaking_Abi = [{
-	"type": "constructor",
-	"inputs": []
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "uint256[]",
-		"name": "",
-		"internalType": "uint256[]"
-	}, {
-		"type": "uint256[]",
-		"name": "",
-		"internalType": "uint256[]"
-	}, {
-		"type": "uint256[]",
-		"name": "",
-		"internalType": "uint256[]"
-	}],
-	"name": "UserInformation",
-	"inputs": [{
-		"type": "address",
-		"name": "_add",
-		"internalType": "address"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "uint256",
-		"name": "DepositeToken",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "lastUpdated",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "lockableDays",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "WithdrawReward",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "WithdrawAbleReward",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "depositeTime",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "WithdrawDepositeAmount",
-		"internalType": "uint256"
-	}],
-	"name": "Users",
-	"inputs": [{
-		"type": "address",
-		"name": "",
-		"internalType": "address"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}],
-	"name": "allocation",
-	"inputs": [{
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "changeDeductionPercentage",
-	"inputs": [{
-		"type": "uint256",
-		"name": "amount",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "changeMinimmumAmount",
-	"inputs": [{
-		"type": "uint256",
-		"name": "amount",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "changePercentages",
-	"inputs": [{
-		"type": "uint256",
-		"name": "_30dayspercent",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "_90dayspercent",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "_180dayspercent",
-		"internalType": "uint256"
-	}, {
-		"type": "uint256",
-		"name": "_360dayspercent",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "changetimeCal",
-	"inputs": [{
-		"type": "uint256",
-		"name": "_time",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}],
-	"name": "depositeToken",
-	"inputs": [{
-		"type": "address",
-		"name": "",
-		"internalType": "address"
-	}, {
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}],
-	"name": "depositetime",
-	"inputs": [{
-		"type": "address",
-		"name": "",
-		"internalType": "address"
-	}, {
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "emergencyWithdraw",
-	"inputs": [{
-		"type": "address",
-		"name": "_token",
-		"internalType": "contract IARC20"
-	}, {
-		"type": "uint256",
-		"name": "_amount",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "emergencyWithdrawARC",
-	"inputs": [{
-		"type": "uint256",
-		"name": "Amount",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "payable",
-	"outputs": [],
-	"name": "farm",
-	"inputs": [{
-		"type": "uint256",
-		"name": "_lockableDays",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "harvest",
-	"inputs": [{
-		"type": "uint256[]",
-		"name": "_index",
-		"internalType": "uint256[]"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}],
-	"name": "lockabledays",
-	"inputs": [{
-		"type": "address",
-		"name": "",
-		"internalType": "address"
-	}, {
-		"type": "uint256",
-		"name": "",
-		"internalType": "uint256"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "address",
-		"name": "",
-		"internalType": "address"
-	}],
-	"name": "owner",
-	"inputs": []
-}, {
-	"type": "function",
-	"stateMutability": "view",
-	"outputs": [{
-		"type": "uint256",
-		"name": "reward",
-		"internalType": "uint256"
-	}],
-	"name": "pendindRewards",
-	"inputs": [{
-		"type": "address",
-		"name": "_add",
-		"internalType": "address"
-	}]
-}, {
-	"type": "function",
-	"stateMutability": "nonpayable",
-	"outputs": [],
-	"name": "transferOwnership",
-	"inputs": [{
-		"type": "address",
-		"name": "newOwner",
-		"internalType": "address"
-	}]
-}, {
-	"type": "event",
-	"name": "Deposite_",
-	"inputs": [{
-		"type": "address",
-		"name": "to",
-		"indexed": true
-	}, {
-		"type": "address",
-		"name": "From",
-		"indexed": true
-	}, {
-		"type": "uint256",
-		"name": "amount",
-		"indexed": false
-	}, {
-		"type": "uint256",
-		"name": "day",
-		"indexed": false
-	}, {
-		"type": "uint256",
-		"name": "time",
-		"indexed": false
-	}],
-	"anonymous": false
-}, {
-	"type": "event",
-	"name": "OwnershipTransferred",
-	"inputs": [{
-		"type": "address",
-		"name": "previousOwner",
-		"indexed": true
-	}, {
-		"type": "address",
-		"name": "newOwner",
-		"indexed": true
-	}],
-	"anonymous": false
-}, {
-	"type": "receive"
-}]
+export const tokenStaking = "0x72d860104c58d34d3315a2e0831f65b7992d9a08";
+export const tokenStaking_Abi = [
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "From",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "day",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "time",
+				"type": "uint256"
+			}
+		],
+		"name": "Deposite_",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_add",
+				"type": "address"
+			}
+		],
+		"name": "UserInformation",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Users",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "DepositeToken",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lastUpdated",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lockableDays",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "WithdrawReward",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "WithdrawAbleReward",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "depositeTime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "WithdrawDepositeAmount",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "allocation",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "changeDeductionPercentage",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "changeMinimmumAmount",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_30dayspercent",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_90dayspercent",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_180dayspercent",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_360dayspercent",
+				"type": "uint256"
+			}
+		],
+		"name": "changePercentages",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_time",
+				"type": "uint256"
+			}
+		],
+		"name": "changetimeCal",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "depositeToken",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "depositetime",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract IARC20",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "emergencyWithdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "Amount",
+				"type": "uint256"
+			}
+		],
+		"name": "emergencyWithdrawARC",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_lockableDays",
+				"type": "uint256"
+			}
+		],
+		"name": "farm",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "_index",
+				"type": "uint256[]"
+			}
+		],
+		"name": "harvest",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "lockabledays",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_add",
+				"type": "address"
+			}
+		],
+		"name": "pendindRewards",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "reward",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
+	}
+]
 export const TokenAddress = "0x208F521710620d417E9f35a37f107e360f4A7c3d"
 export const Token_Abi = [{
 	"inputs": [],
